@@ -705,6 +705,7 @@ struct Cli {
 
 fn main() -> anyhow::Result<()> {
     let cli = Cli::parse();
+      let a = 0;
 
     tracing_subscriber::fmt()
         .with_span_events(FmtSpan::CLOSE)
